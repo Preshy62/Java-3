@@ -1,0 +1,131 @@
+*,
+::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: bisque;
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+
+.main{
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  
+
+}
+
+.section-center{
+  background-color: aliceblue;
+  border-radius: var(--radius);
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 5px;
+  box-shadow: 4px 3px 4px 3px #dfe0e0;
+  transition: var(--transition);
+}
+
+.form-control{
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  margin-bottom: 2rem;
+  font-size: 40px;
+}
+
+.grocery-item{
+  display: flex;
+  gap: 9rem;
+  word-wrap: normal;
+  /* justify-content: space-between; */
+  margin-bottom: 0.5rem;
+  border-radius: var(--radius);
+
+}
+
+#grocery{
+  padding: 0.50rem;
+  padding-left: 1rem;
+  background-color: var(--clr-grey-10);
+  border-top-left-radius:var(--radius) ;
+  border-bottom-left-radius: var(--radius);
+  border-color: lightslategray;
+  font-size: 1rem;
+}
+
+.submit-btn{
+  background: #cdcdfd;
+  display: grid;
+  align-items: center;
+  flex: 0 0 5rem;
+  padding: 0.25rem;
+  letter-spacing: 2px;
+  /* border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius); */
+  border-end-end-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  font-size: 0.90rem;
+  
+
+}
+
+.alert{
+  margin-bottom: 1rem;
+  display: grid;
+  height: 1rem;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 0.30rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+.grocery-container{
+  margin-top: 2rem;
+  /* visibility: hidden; */
+  transition: var(--transition);
+}
+
+.show-container{
+  visibility: visible;
+}
+
+
+.alert-danger{
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.alert-success{
+  background: #f8d7da;
+  color: #155724;
+ 
+}
+
+.fa-trash{
+  background:#f8d7da;
+  color: #06db38;
+}
+
+.fa-edit{
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.clear-btn{
+  padding: 8px 20px;
+  color: #721c24;
+
+}
